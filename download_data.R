@@ -20,4 +20,14 @@ for (f in files) {
   dest <- file.path("data", basename(f))
   if (!file.exists(dest)) download.file(paste0(base_url, f), dest, mode = "wb")
 }
-# new branch trying to commit 
+# new branch trying to commit commitcommit
+video_view <- read_csv("data/video_view.csv")
+video_view %>%
+  select(video_id, creator_id, impressions_n, watched_n, watch_rate, avg_watch
+         head(6)
+         
+impressions <- read_csv("data/impressions.csv")
+watch_events <- read_csv("data/watch_events.csv")
+impressions %>%
+select(impression_id, session_id, user_id, video_id, creator_id, shown_at) 
+         head(6)
